@@ -15,7 +15,7 @@
   <body>
     <h1>SIGN-UP</h1>
     <div class="container-sm">
-      <form class="row g-3 needs-validation" novalidate>
+      <form action="/sign-up" method="post" class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="nombre" class="form-label">Tu nombre</label>
           <input
@@ -25,7 +25,7 @@
             value="Mark"
             required
           />
-           <!-- <div class="valid-feedback">Looks good!</div> -->
+          <!-- <div class="valid-feedback">Looks good!</div> -->
         </div>
         <div class="col-md-4">
           <label for="apellido" class="form-label">Tu apellido</label>
@@ -39,16 +39,18 @@
           <!-- <div class="valid-feedback">Looks good!</div> -->
         </div>
         <div class="col-md-4">
-            <label for="nacimiento" class="form-label">Tu fecha de nacimiento</label>
-            <input
-              type="date"
-              class="form-control"
-              id="nacimiento"
-              value="Otto"
-              required
-            />
-            <!-- <div class="valid-feedback">Looks good!</div> -->
-          </div>
+          <label for="nacimiento" class="form-label"
+            >Tu fecha de nacimiento</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="nacimiento"
+            value="Otto"
+            required
+          />
+          <!-- <div class="valid-feedback">Looks good!</div> -->
+        </div>
         <div class="col-md-6">
           <label for="ciudad" class="form-label">Tu dirección</label>
           <input type="text" class="form-control" id="ciudad" required />
@@ -131,6 +133,7 @@
         </div>
       </form>
     </div>
+    
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
