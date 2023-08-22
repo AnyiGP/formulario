@@ -1,0 +1,97 @@
+body{
+    background-color: #331D2C;   
+    font-family: 'Roboto Mono', monospace; 
+}
+.tableAlumnos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #A78295;
+   width: auto;
+   height: auto;
+   margin: 10px;
+   padding: 10px;
+   flex-direction: column;
+}
+.peliculas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #A78295;
+   width: auto;
+   height: auto;
+   margin: 10px;
+   padding: 10px;
+   flex-direction: column;
+}
+
+.table{
+    background-color: #3F2E3E;
+    color: #EFE1D1
+}
+.peli{
+    background-color: #3F2E3E;
+    color: #EFE1D1
+}
+.demo {
+    border:1px solid #C0C0C0;
+    border-collapse:collapse;
+    padding:5px;
+}
+.demo th {
+    border:1px solid #C0C0C0;
+    padding:5px;
+    background:#F0F0F0;
+}
+.demo td {
+    border:1px solid #C0C0C0;
+    padding:5px;
+}
+
+.table{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #EFE1D1;
+    color: #3F2E3E;
+}
+
+button:hover{
+    background-color: #3F2E3E;
+    color:#EFE1D1;
+    cursor: pointer;
+}
+
+#header-table th{
+    color:#3F2E3E
+}
+
+#title{
+    display: flex;
+    color: #EFE1D1;
+    justify-content: center;
+}
+
+.peli img{
+    width: 200px;
+    height: 320px;
+    margin: 10px;
+}
+
+header{
+    background-color: #A78295;
+    color: #331D2C;
+    display: flex;
+    justify-content: center;
+}
