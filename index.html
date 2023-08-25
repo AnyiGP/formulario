@@ -1,15 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Inicio</title>
-</head>
-<body>
-    <h1>Bienvenido a Home</h1>
+  </head>
+  <body>
+    <!-- ***sign-up*** -->
+    <h1>SIGN-UP</h1>
+    <div class="container-sm">
+      <form
+        action="/sign-up"
+        method="post"
+        class="d-flex flex-column mb-3 needs-validation"
+        novalidate
+        id="sign-up-form"
+      >
+        <!-- nombre -->
+        <div class="col-md-4">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre. De 1 a 40 chars. No puede contener numeros"
+            />
+            <label for="nombre">Nombre</label>
+          </div>
+          <p>De 1 a 40 chars. No puede contener numeros</p>
+          <br />
+        </div>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <!-- user -->
+        <div class="col-md-4">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="user"
+              name="user"
+              placeholder="Tu nombre de usuario"
+            />
+            <label for="user">Usuario</label>
+          </div>
+        </div>
+
+        <!-- pass -->
+        <div class="col-md-4">
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <label for="password">Password</label>
+          </div>
+        </div>
+
+        <!-- email -->
+        <div class="col-md-4">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="name@example.com"
+            />
+            <label for="email">Email</label>
+          </div>
+        </div>
+
+        <!-- btn -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" id="btn-registrar-usuario">Registrarse</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ***login*** -->
+    <h1>Login</h1>
+    <div class="container-sm">
+      <form action="/login" method="post" id="login-form">
+        <!-- user -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="login-usuario"
+            name="login-usuario"
+            placeholder=""
+          />
+          <label for="floatingInput">Usuario</label>
+        </div>
+        <!-- pass -->
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="login-pass"
+            name="login-pass"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <!-- btn ingresar -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Ingresar</button>
+        </div>
+        <!-- btn ir a registro -->
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit" id="registro">
+            Ingresar
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- ***home*** -->
+    <div id="home">
+      <h1>Bienvenido a Home</h1>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
 </html>
