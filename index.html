@@ -9,7 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Inicio</title>
   </head>
   <body>
@@ -31,12 +31,10 @@
               class="form-control"
               id="nombre"
               name="nombre"
-              placeholder="Tu nombre. De 1 a 40 chars. No puede contener numeros"
+              placeholder="Tu nombre"
             />
             <label for="nombre">Nombre</label>
           </div>
-          <p>De 1 a 40 chars. No puede contener numeros</p>
-          <br />
         </div>
 
         <!-- user -->
@@ -66,7 +64,7 @@
             <label for="password">Password</label>
           </div>
         </div>
-
+<br>
         <!-- email -->
         <div class="col-md-4">
           <div class="form-floating mb-3">
@@ -83,7 +81,13 @@
 
         <!-- btn -->
         <div class="col-12">
-          <button class="btn btn-primary" type="submit" id="btn-registrar-usuario">Registrarse</button>
+          <button
+            class="btn btn-primary"
+            type="submit"
+            id="btn-registrar-usuario"
+          >
+            Registrarse
+          </button>
         </div>
       </form>
     </div>
@@ -137,4 +141,5 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"
   ></script>
+  <script type="module" src="/src/main.mjs"></script>
 </html>
