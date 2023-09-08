@@ -1,7 +1,6 @@
 
 //import { usersDB } from "./users.mjs";
 
-
 let users = [
   {usuario: "admin", password: "password"}
 ]
@@ -30,8 +29,9 @@ localStorage.setItem("usuarios", JSON.stringify(cambio))
 //verificar que el usuario esté registrado, si está registrado va al login, sino continua.
 //recorrer todos los usuario en el local y si coincide lleva a home
 
-//ejemplo de guardar un usuario en el local sotrage con una promesa
-
+//import { createLocal } from "./localStorage.mjs"
+///////////////////////////////////
+// //ejemplo de guardar un usuario en el local sotrage con una promesa
 const createLocal = () => {
 return new Promise((resolve, reject) => {
   if (localStorage.getItem("users") === null) {
@@ -48,6 +48,9 @@ return new Promise((resolve, reject) => {
   }
 })
 };
+
+
+/////////////////////////////
 createLocal()
 .then(resolve => alert(resolve))
 .catch(error => alert(error))
