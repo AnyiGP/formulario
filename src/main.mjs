@@ -77,6 +77,8 @@ const guardarUsuarioEnLocalStorage = (usuario) => {
   });
 }
 
+
+
 // Evento submit del formulario
 document.getElementById("userForm").addEventListener("submit", function(event) {
   event.preventDefault(); // Evitar que el formulario se envíe normalmente
